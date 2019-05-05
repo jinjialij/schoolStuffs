@@ -1,0 +1,6 @@
+STUDENTS: jiali
+QUESTION: a1
+MARKER: smohammed (Sohail Mohammed <sh488044@dal.ca>)
+MARKS (12):11
+--- COMMENTS ---
+(l) only the permissions of double_vision should be displayed

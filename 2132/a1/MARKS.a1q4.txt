@@ -1,0 +1,6 @@
+STUDENTS: jiali
+QUESTION: a1
+MARKER: singamanen (Srisaichand Singamaneni <chandu.singamaneni@dal.ca>)
+MARKS (10):10
+--- COMMENTS ---
+Excellent!

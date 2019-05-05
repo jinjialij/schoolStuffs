@@ -1,0 +1,42 @@
+Script started on Sun 27 Jan 2019 04:48:57 PM AST
+[?1034hjiali@bluenose:~/csci2132/svn/jiali/a1$ date
+Sun Jan 27 16:48:59 AST 2019
+jiali@bluenose:~/csci2132/svn/jiali/a1$ date "+%I:%M %p %Z on %b %d, %Y"
+04:49 PM AST on Jan 27, 2019
+jiali@bluenose:~/csci2132/svn/jiali/a1$ whoami
+jiali
+jiali@bluenose:~/csci2132/svn/jiali/a1$ id -u
+14003
+jiali@bluenose:~/csci2132/svn/jiali/a1$ cat > user_info.txt
+B00782346
+Jiali
+Jin
+jiali
+jiali@bluenose:~/csci2132/svn/jiali/a1$ cat user_info.txt 
+B00782346
+Jiali
+Jin
+jiali
+jiali@bluenose:~/csci2132/svn/jiali/a1$ sort user_info.txt | cat
+B00782346
+Jiali
+jiali
+Jin
+jiali@bluenose:~/csci2132/svn/jiali/a1$ sort user_info.txt | head -1 |ca[K[K cat
+B00782346
+jiali@bluenose:~/csci2132/svn/jiali/a1$ cat user_info.txt | wc -l
+4
+jiali@bluenose:~/csci2132/svn/jiali/a1$ cat user_info.txt user_info.txt > double _vision.txt
+jiali@bluenose:~/csci2132/svn/jiali/a1$ chmod u=r,go= double_vision.txt 
+jiali@bluenose:~/csci2132/svn/jiali/a1$ ls -l
+total 16
+-rw-r--r--. 1 jiali csugrad  377 Jan 27 00:33 a1q1.txt
+-rw-r--r--. 1 jiali csugrad  157 Jan 26 23:23 a1q1.txt~
+-rw-r--r--. 1 jiali csugrad    0 Jan 27 16:48 a1q2.log
+-r--------. 1 jiali csugrad   52 Jan 27 16:51 double_vision.txt
+-rw-r--r--. 1 jiali csugrad   59 Jan 27 00:48 spreadsheet.csv
+-rw-r--r--. 1 jiali csugrad 1138 Jan 27 16:40 test.log
+-rw-r--r--. 1 jiali csugrad   26 Jan 27 16:50 user_info.txt
+jiali@bluenose:~/csci2132/svn/jiali/a1$ exit
+
+Script done on Sun 27 Jan 2019 04:51:32 PM AST

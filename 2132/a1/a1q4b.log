@@ -1,0 +1,11 @@
+Script started on Sun 03 Feb 2019 04:50:51 PM AST
+[?1034hjiali@bluenose:~/csci2132/svn/jiali/a1$ java a1q4a | java a1q4a
+Subaru,Forester,$43000
+Toyota,Corolla,$29000
+Mazda,5,$38000
+Forester,$43000,Subaru
+Corolla,$29000,Toyota
+5,$38000,Mazda
+jiali@bluenose:~/csci2132/svn/jiali/a1$ exit
+
+Script done on Sun 03 Feb 2019 04:51:18 PM AST

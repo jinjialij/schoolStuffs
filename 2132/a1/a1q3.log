@@ -1,0 +1,16 @@
+Script started on Sun 27 Jan 2019 04:53:19 PM AST
+[?1034hjiali@bluenose:~/csci2132/svn/jiali/a1$ ls -a /usr/bin/*.sh
+/usr/bin/fcsmotd.sh  /usr/bin/lesspipe.sh	   /usr/bin/unix-lpr.sh
+/usr/bin/gettext.sh  /usr/bin/lprsetup.sh	   /usr/bin/url_handler.sh
+/usr/bin/gvmap.sh    /usr/bin/setup-nsssysinit.sh
+jiali@bluenose:~/csci2132/svn/jiali/a1$ ls -a /usr/include/[ab]*/[K.h
+/usr/include/aio.h	 /usr/include/argp.h	/usr/include/bfdlink.h
+/usr/include/aliases.h	 /usr/include/argz.h	/usr/include/byteswap.h
+/usr/include/alloca.h	 /usr/include/ar.h	/usr/include/bzlib.h
+/usr/include/ansidecl.h  /usr/include/assert.h
+/usr/include/a.out.h	 /usr/include/bfd.h
+jiali@bluenose:~/csci2132/svn/jiali/a1$ ls -a /usr/n[Kbin/a?????
+/usr/bin/alpine  /usr/bin/aspell  /usr/bin/aulast  /usr/bin/auvirt
+jiali@bluenose:~/csci2132/svn/jiali/a1$ exit
+
+Script done on Sun 27 Jan 2019 04:54:16 PM AST

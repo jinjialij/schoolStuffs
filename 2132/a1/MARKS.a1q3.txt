@@ -1,0 +1,5 @@
+STUDENTS: jiali
+QUESTION: a1
+MARKER: spradhan (Sampark Pradhan <sm459977@dal.ca>)
+MARKS (6): 6
+--- COMMENTS ---

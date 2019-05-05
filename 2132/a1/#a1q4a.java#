@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.io.*;
+public class a1q4a
+{
+    public static void main (String[]args)throws IOException
+    {
+        Scanner kb=new Scanner(System.in);
+	String filename = kb.nextLine();
+	String f1,f2,f3;
+	File file = new File(file);
+	Scanner inputFile = new Scanner(file);
+	
+	while(inputFile.hasNext())
+	{
+	    f1import java.util.Scanner;
+	    import java.util.Scanner;
+
+	}
+
+    }
+
+}

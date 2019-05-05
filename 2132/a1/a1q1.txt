@@ -1,0 +1,30 @@
+Q1
+a)
+1)What are the permissions Joe needs to set for the file clever_hack.c and for the directory NewSpiffyApp.
+
+For clever_hack.c file:
+    u=rwx,g=r--,o=--- (740)
+For NewSpiffyApp Directory:
+    u=rwx,g=r-x,o=--- (750)
+
+2)What command does Joe use to change the permissions of clever_hack.c and NewSpiffyApp?
+For clever_hack.c file:
+    chmod u=rw,g=rx,o= clever_hack.c
+For NewSpiffyApp Directory:
+    chmod u=rwx,g=rx,o= NewSpiffyApp
+
+3)What command does Joe use to check the new permissions of clever_hack.c
+and NewSpiffyApp?
+For clever_hack.c file:
+    ls -l clever_hack.c 
+For clever_hack.c file:
+    ls -ld NewSpiffyApp
+
+b)
+1) What key combination can you press to terminate this program and return to the shell prompt?
+Use Ctrl-C to end current process
+2)What key combination do you press to clear your screen?
+Use Ctrl-L to clear screen
+
+c)Explain the difference between a program and a process.
+A program is a file that stores machine code that can be loaded into memory and run while a process is a running program.

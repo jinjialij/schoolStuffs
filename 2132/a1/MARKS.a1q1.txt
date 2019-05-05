@@ -1,0 +1,26 @@
+STUDENTS: jiali
+QUESTION: a1
+MARKER: faizan (Syed Faizan <syedmfaizan@dal.ca>)
+MARKS (8): 7
+--- COMMENTS ---
+a) 
+NewSpiffyApp permissions
+	u=Correct (0.5)
+	g=Correct (0.5)
+	o=Correct (0.5)
+	
+clever_hack.c permissions
+	u=rw-
+	g=Correct (0.5)
+	o=Correct (0.5)
+	
+Octal Permissions
+	NewSpiffyApp: Correct (0.5)
+	clever_hack.c: 640
+	
+b) 
+Key Combination to terminate a program: Correct (1)
+Key Combination to clear screen: Correct (1)
+
+c) 
+Correct (2)
