@@ -1,0 +1,31 @@
+Script started on Sun 10 Feb 2019 11:18:55 PM AST
+[?1034hjiali@bluenose:~/csci2132/svn/jiali/a2$ grep '<h[0-9]>' /users/webhome/nzeh/Teaching/2132/index.html | wc -l
+26
+jiali@bluenose:~/csci2132/svn/jiali/a2$ ls -la /usr/bin | egrep '[0-9]{8,}'
+-rwxr-xr-x.   1 root root    13631256 Dec 19 15:09 bsondump
+-rwxr-xr-t.   1 root root    14784560 Nov  2 14:30 emacs-24.3
+-rwxr-xr-x.   1 root root    39783432 Dec 19 15:09 mongo
+-rwxr-xr-x.   1 root root    62258688 Dec 19 15:09 mongod
+-rwxr-xr-x.   1 root root    15944080 Dec 19 15:09 mongodump
+-rwxr-xr-x.   1 root root    13975632 Dec 19 15:09 mongoexport
+-rwxr-xr-x.   1 root root    13871328 Dec 19 15:09 mongofiles
+-rwxr-xr-x.   1 root root    14139536 Dec 19 15:09 mongoimport
+-rwxr-xr-x.   1 root root    17054512 Dec 19 15:09 mongorestore
+-rwxr-xr-x.   1 root root    35536360 Dec 19 15:09 mongos
+-rwxr-xr-x.   1 root root    14208264 Dec 19 15:09 mongostat
+-rwxr-xr-x.   1 root root    13818104 Dec 19 15:09 mongotop
+-rwxr-xr-x.   1 root root    10705976 Sep 10 07:31 mysql
+-rwxr-xr-x.   1 root root    10439552 Sep 10 07:31 mysqlbinlog
+-rwxr-xr-x.   1 root root    34986105 Nov 27 01:11 node
+-rwxr-xr-x.   1 root root    12019082 Apr 14  2018 ocaml
+-rwxr-xr-x.   1 root root    11395129 Apr 14  2018 ocamlc.byte
+-rwxr-xr-x.   1 root root    15886368 Apr 14  2018 ocamlopt.byte
+jiali@bluenose:~/csci2132/svn/jiali/a2$ env | grep $PATH
+PATH=/users/cs/jiali/bin:/local/bin:/bin:/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/local/sbin:/usr/local/sbin:/usr/sbin:/sbin
+jiali@bluenose:~/csci2132/svn/jiali/a2$ grep -Ei '(.*[aeiou].*){20,}' /usr/share/dict/linux.words
+pneumonoultramicroscopicsilicovolcanoconiosis
+jiali@bluenose:~/csci2132/svn/jiali/a2$ grep '^[bp].*ing$' /usr/share/dict/linux.words | wc -w
+2892
+jiali@bluenose:~/csci2132/svn/jiali/a2$ exit
+
+Script done on Sun 10 Feb 2019 11:19:46 PM AST

@@ -1,0 +1,6 @@
+STUDENTS: jiali
+QUESTION: a2
+MARKER: kazi (Serikzhan Kazi <sr520720@dal.ca>)
+MARKS (10): 8.5
+--- COMMENTS ---
+(c) incorrect

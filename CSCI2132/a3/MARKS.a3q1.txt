@@ -1,0 +1,6 @@
+STUDENTS: jiali
+QUESTION: a3
+MARKER: spradhan (Sampark Pradhan <sm459977@dal.ca>)
+MARKS (12): 11
+--- COMMENTS ---
+(b) Incomplete explanation. If a FG prcess is running , the shell cannot start more processes while no such restrictions applies to a BG process. 

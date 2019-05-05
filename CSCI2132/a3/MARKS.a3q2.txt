@@ -1,0 +1,7 @@
+STUDENTS: jiali
+QUESTION: a3
+MARKER: kthakkar (Karan Kirit Thakkar <kr527589@dal.ca>)
+MARKS (10):8
+--- COMMENTS ---
+Qc there should be 14 words
+Qd partially correct

@@ -1,0 +1,12 @@
+a) Process is a runing program.  Job is a function of the shell that manages processes. It manages processes that started in the current shell.
+
+b) Foreground process has access to the terminal, including standard input and output. However, background process cannot read from keyboard but can print to
+terminal
+
+c)A centralized version control system stores the version history in a central server with one central repository. But the distributed version control system has multiple distributed repositories. 
+
+d)Using Ctrl-Z to suspend a job. To resume the job in foreground, using jobs to print all stopped processes and using fg %job.
+
+e)Using xterm & to start a process in background.
+
+f)

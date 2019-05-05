@@ -1,0 +1,22 @@
+("emacs" "unique.c")
+Loading /usr/share/emacs/site-lisp/site-start.d/cmake3-init.el (source)...done
+Loading /usr/share/emacs/site-lisp/site-start.d/desktop-entry-mode-init.el (source)...done
+Loading /usr/share/emacs/site-lisp/site-start.d/systemtap-init.el (source)...done
+For information about GNU Emacs and the GNU system, type C-h C-a.
+Loading cc-langs...done
+
+Loading vc-svn...done
+call-interactively: End of buffer [7 times]
+Auto-saving...done
+Wrote /users/cs/jiali/csci2132/svn/jiali/a6/*Messages*
+Type C-h for help.
+Please answer yes or no.
+Saving file /users/cs/jiali/csci2132/svn/jiali/a6/*Messages*...
+Wrote /users/cs/jiali/csci2132/svn/jiali/a6/*Messages*
+Type C-h for help. [3 times]
+Saving file /users/cs/jiali/csci2132/svn/jiali/a6/*Messages*...
+Wrote /users/cs/jiali/csci2132/svn/jiali/a6/*Messages*
+Type C-h for help.
+Saving file /users/cs/jiali/csci2132/svn/jiali/a6/unique.c...
+Wrote /users/cs/jiali/csci2132/svn/jiali/a6/unique.c
+delete-backward-char: Text is read-only

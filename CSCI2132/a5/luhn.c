@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int main(){
+  
+  int num,count=0;
+  scanf("%d\n",&num);
+  unsigned long long int input[num];/*notice data type unsigned long int*/
+  for(count=0;count<num-1;count++){
+    scanf("%llu\n",&input[count]);
+ }
+  if(count==num-1){
+    scanf("%llu",&input[count]);
+  }
+  for(count=0;count<num;count++){
+    unsigned long int length=0,sum=0,index=0,j;
+    unsigned long long int x=input[count];
+    //count number of digits of each input number
+    while(x>0){
+      length++;
+      x=x/10;
+    }
+    j=length;
+    unsigned long long int  z[length];
+    x=input[count];
+    for(j=length,index=0;j>0;j--){
+      /*get y value */
+      if((index)%2>0){//if index of x(i) is odd,y=2x
+	z[index]=2*(x%10);	         
+      }else{//if index of x(i) is even, y=x
+	z[index]=x%10;
+      }
+      
+      /*get z value*/
+      if(z[index]>=10){/*if y >=10, then z=y/10+y%10*/
+	z[index]=z[index]/10+z[index]%10;
+      }
+
+      //renew x and index
+      x=x/10;
+      index++;
+    }
+
+    /*calculate L(x)*/
+    for(j=length,index=0;j>0;j--){
+      sum+=z[index++];
+    }
+    
+    //check if is vaild
+    if(sum%10!=0)
+      printf("invaild\n");
+    else
+      printf("valid\n");
+  }
+  
+  return 0;//end of program
+
+		  
+}

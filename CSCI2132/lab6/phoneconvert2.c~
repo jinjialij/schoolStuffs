@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+  int a,b,c;
+  
+  printf("Enter a telephone number [(xxx)xxx-xxxx]: ");
+  scanf("(%d)%d-%d",&a,&b,&c);
+  if(a<=999 && a>=100 && b<=999 && b>=100 && c<=999 && c>=100){
+    printf("The number is %d,%d,%d\n",a,b,c);
+  }
+  return 0;
+}

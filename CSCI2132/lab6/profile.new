@@ -1,0 +1,11 @@
+case `basename $SHELL` in
+  sh|jsh)
+	. $HOME/.shrc
+	;;
+  ksh)
+	. $HOME/.kshrc
+	;;
+  bash)
+	. $HOME/.bashrc
+	;;
+esac

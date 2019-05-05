@@ -1,0 +1,631 @@
+Script started on Sun 10 Feb 2019 11:51:16 PM AST
+[?1034hjiali@bluenose:~/csci2132/svn/jiali/a2$ cd ../../
+jiali@bluenose:~/csci2132/svn$ cd ../
+jiali@bluenose:~/csci2132$ mkdir tmp
+jiali@bluenose:~/csci2132$ cd tmp
+jiali@bluenose:~/csci2132/tmp$ svn co https://svn.cs.dal.ca/csci2132/CSID/a2/a2q 3[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/a2/a2q3 [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P/a2/a2q3
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P/a2/a2q3[1P/a2/a2q3j/a2/a2q3i/a2/a2q3a/a2/a2q3 [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl/a2/a2q33[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci/a2/a2q3[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+Authentication realm: <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+Password for 'jiali': 
+
+-----------------------------------------------------------------------
+ATTENTION!  Your password for authentication realm:
+
+   <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+
+can only be stored to disk unencrypted!  You are advised to configure
+your system so that Subversion can store passwords encrypted, if
+possible.  See the documentation for details.
+
+You can avoid future appearances of this warning by setting the value
+of the 'store-plaintext-passwords' option to either 'yes' or 'no' in
+'/users/cs/jiali/.subversion/servers'.
+-----------------------------------------------------------------------
+Store password unencrypted (yes/no)? no
+A    a2q3/file1.txt
+Checked out revision 26513.
+jiali@bluenose:~/csci2132/tmp$ ls
+a2q3
+jiali@bluenose:~/csci2132/tmp$ cd a2q3/
+jiali@bluenose:~/csci2132/tmp/a2q3$ ls
+file1.txt
+jiali@bluenose:~/csci2132/tmp/a2q3$ cat > file2.txt
+A little elf
+climbed into a tree,
+to build a house
+that no one could see.
+jiali@bluenose:~/csci2132/tmp/a2q3$ svn add file2.txt 
+A         file2.txt
+jiali@bluenose:~/csci2132/tmp/a2q3$ svn commit -m "add file2"
+Authentication realm: <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+Password for 'jiali': 
+
+-----------------------------------------------------------------------
+ATTENTION!  Your password for authentication realm:
+
+   <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+
+can only be stored to disk unencrypted!  You are advised to configure
+your system so that Subversion can store passwords encrypted, if
+possible.  See the documentation for details.
+
+You can avoid future appearances of this warning by setting the value
+of the 'store-plaintext-passwords' option to either 'yes' or 'no' in
+'/users/cs/jiali/.subversion/servers'.
+-----------------------------------------------------------------------
+Store password unencrypted (yes/no)? no
+Adding         file2.txt
+Transmitting file data .
+Committed revision 26515.
+jiali@bluenose:~/csci2132/tmp/a2q3$ emacs file1.txt 
+[?1049h[?12;25h[?1h=[H[2J[24d[K[?1l>[?12l[?25h[?1049l[39;49m[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-UUU:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading /usr/share/emacs/site-lisp/site-start.d/cmake3-init.el (source)...[K[H
+[?12l[?25h[?12;25h[24;75H[?25ldone[H
+[?12l[?25h[?12;25h[24d[?25lrce)...[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-UUU:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+Loading /usr/share/emacs/site-lisp/site-start.d/desktop-entry-mode-init.el (sou\
+[A[2d[?12l[?25h[?12;25h[24;8H[?25ldone[H
+[?12l[?25h[?12;25h[24d[K[23;49H[?25lsystemtap-init.el (source)...[K[H
+[?12l[?25h[?12;25h[24d[?25lne[23;78Hdo\
+[2d[?12l[?25h[?12;25h[>0c[24d[?25lne[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-UUU:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /usr/share/emacs/site-lisp/site-start.d/systemtap-init.el (source)...do\
+[A[2d[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lLoading vc-svn...[K[H
+[?12l[?25h[?12;25h[24;18H[?25ldone[H
+[?12l[?25h[?12;25h[24d[?25lLoading vc-svn...done[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+A little dwarf[K
+jumped into a pond.[K
+His beard got wet[K
+and was no longer blonde.[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-UU-:----F1  [0m[39;49m[27m[7m[1mfile1.txt   [0m[39;49m[27m[7m   All L1    SVN-26512  (Text) ------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[K[23;34H[?25l[7m2[0m[39;49m[27m[H
+
+[?12l[?25h[?12;25h[C[3;4H[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[5;26H[?25l.[K[23;6H[7m**[0m[39;49m[27m[5;24H[?12l[?25h[?12;25h[?25l.[K[?12l[?25h[?12;25h[?25l.[K[?12l[?25h[?12;25h[?25l.[K[?12l[?25h[?12;25h[?25la.[?12l[?25h[?12;25h[?25lc.[?12l[?25h[?12;25h[?25lk.[?12l[?25h[?12;25h[24;1H[?25lSaving file /users/cs/jiali/csci2132/tmp/a2q3/file1.txt...[5;24H[?12l[?25h[?12;25h[24;1H[?25lWrote /users/cs/jiali/csci2132/tmp/a2q3/file1.txt[K[5;24H[?12l[?25h[?12;25h[23;6H[?25l[7m----F1  [0m[39;49m[27m[7m[1mfile1.txt   [0m[39;49m[27m[7m   All L4    SVN:[0m[39;49m[27m[5;24H[?12l[?25h[?12;25h[24;1H[K[5;24H[24;1H[?25l(No files need saving)[5;24H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49mjiali@bluenose:~/csci2132/tmp/a2q3$ sc[K[Ksvn commiy [K[Kt -m "change last line of file1"
+Authentication realm: <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+Password for 'jiali': 
+
+-----------------------------------------------------------------------
+ATTENTION!  Your password for authentication realm:
+
+   <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+
+can only be stored to disk unencrypted!  You are advised to configure
+your system so that Subversion can store passwords encrypted, if
+possible.  See the documentation for details.
+
+You can avoid future appearances of this warning by setting the value
+of the 'store-plaintext-passwords' option to either 'yes' or 'no' in
+'/users/cs/jiali/.subversion/servers'.
+-----------------------------------------------------------------------
+Store password unencrypted (yes/no)? no
+Sending        file1.txt
+svn: E160042: Commit failed (details follow):
+svn: E160042: File or directory 'file1.txt' is out of date; try updating
+svn: E160024: resource out of date; try updating
+jiali@bluenose:~/csci2132/tmp/a2q3$ svu[Kn update
+Updating '.':
+Authentication realm: <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+Password for 'jiali': 
+
+-----------------------------------------------------------------------
+ATTENTION!  Your password for authentication realm:
+
+   <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+
+can only be stored to disk unencrypted!  You are advised to configure
+your system so that Subversion can store passwords encrypted, if
+possible.  See the documentation for details.
+
+You can avoid future appearances of this warning by setting the value
+of the 'store-plaintext-passwords' option to either 'yes' or 'no' in
+'/users/cs/jiali/.subversion/servers'.
+-----------------------------------------------------------------------
+Store password unencrypted (yes/no)? no
+G    file1.txt
+Updated to revision 26518.
+jiali@bluenose:~/csci2132/tmp/a2q3$ svn [K[K[K[Kcat file1.txt 
+A little elf
+jumped into a pond.
+His beard got wet
+and was no longer black.
+jiali@bluenose:~/csci2132/tmp/a2q3$ svn commit -m "merged changes"
+Authentication realm: <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+Password for 'jiali': 
+
+-----------------------------------------------------------------------
+ATTENTION!  Your password for authentication realm:
+
+   <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+
+can only be stored to disk unencrypted!  You are advised to configure
+your system so that Subversion can store passwords encrypted, if
+possible.  See the documentation for details.
+
+You can avoid future appearances of this warning by setting the value
+of the 'store-plaintext-passwords' option to either 'yes' or 'no' in
+'/users/cs/jiali/.subversion/servers'.
+-----------------------------------------------------------------------
+Store password unencrypted (yes/no)? no
+Sending        file1.txt
+Transmitting file data .
+Committed revision 26521.
+jiali@bluenose:~/csci2132/tmp/a2q3$ svn mv file1.txt file3.txt
+A         file3.txt
+D         file1.txt
+jiali@bluenose:~/csci2132/tmp/a2q3$ svn commit -m "rename file1 to file3"
+Authentication realm: <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+Password for 'jiali': 
+
+-----------------------------------------------------------------------
+ATTENTION!  Your password for authentication realm:
+
+   <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+
+can only be stored to disk unencrypted!  You are advised to configure
+your system so that Subversion can store passwords encrypted, if
+possible.  See the documentation for details.
+
+You can avoid future appearances of this warning by setting the value
+of the 'store-plaintext-passwords' option to either 'yes' or 'no' in
+'/users/cs/jiali/.subversion/servers'.
+-----------------------------------------------------------------------
+Store password unencrypted (yes/no)? no
+Deleting       file1.txt
+Adding         file3.txt
+
+Committed revision 26522.
+jiali@bluenose:~/csci2132/tmp/a2q3$ emacs file2.txt 
+[?1049h[?12;25h[?1h=[H[2J[24d[K[?1l>[?12l[?25h[?1049l[39;49m[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-UUU:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading /usr/share/emacs/site-lisp/site-start.d/cmake3-init.el (source)...[K[H
+[?12l[?25h[?12;25h[24;75H[?25ldone[H
+[?12l[?25h[?12;25h[24d[?25lrce)...[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-UUU:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+Loading /usr/share/emacs/site-lisp/site-start.d/desktop-entry-mode-init.el (sou\
+[A[2d[?12l[?25h[?12;25h[24;8H[?25ldone[H
+[?12l[?25h[?12;25h[24d[K[23;49H[?25lsystemtap-init.el (source)...[K[H
+[?12l[?25h[?12;25h[24d[?25lne[23;78Hdo\
+[2d[?12l[?25h[?12;25h[>0c[24d[?25lne[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-UUU:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /usr/share/emacs/site-lisp/site-start.d/systemtap-init.el (source)...do\
+[A[2d[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lLoading vc-svn...[K[H
+[?12l[?25h[?12;25h[24;18H[?25ldone[H
+[?12l[?25h[?12;25h[24d[?25lLoading vc-svn...done[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+A little elf[K
+climbed into a tree,[K
+to build a house[K
+that no one could see.[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-UU-:----F1  [0m[39;49m[27m[7m[1mfile2.txt   [0m[39;49m[27m[7m   All L1    SVN-26515  (Text) ------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[K[23;34H[?25l[7m2[0m[39;49m[27m[H
+
+[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;1H[?12l[?25h[?12;25h		[K[23;6H[?25l[7m**[0m[39;49m[27m[4;16H[?12l[?25h[?12;25h[K[K[K[K[C[?25ls[?12l[?25h[?12;25h[?25lh[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25ld[?12l[?25h[?12;25h[24;1H[?25lSaving file /users/cs/jiali/csci2132/tmp/a2q3/file2.txt...[4;16H[?12l[?25h[?12;25h[24;1H[?25lWrote /users/cs/jiali/csci2132/tmp/a2q3/file2.txt[K[4;16H[?12l[?25h[?12;25h[23;6H[?25l[7m----F1  [0m[39;49m[27m[7m[1mfile2.txt   [0m[39;49m[27m[7m   All L3    SVN:[0m[39;49m[27m[4;16H[?12l[?25h[?12;25h[24;1H[K[4;16H[24;1H[?25l(No files need saving)[4;16H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49mjiali@bluenose:~/csci2132/tmp/a2q3$ svn update
+Updating '.':
+Authentication realm: <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+Password for 'jiali': 
+
+-----------------------------------------------------------------------
+ATTENTION!  Your password for authentication realm:
+
+   <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+
+can only be stored to disk unencrypted!  You are advised to configure
+your system so that Subversion can store passwords encrypted, if
+possible.  See the documentation for details.
+
+You can avoid future appearances of this warning by setting the value
+of the 'store-plaintext-passwords' option to either 'yes' or 'no' in
+'/users/cs/jiali/.subversion/servers'.
+-----------------------------------------------------------------------
+Store password unencrypted (yes/no)? no
+G    file2.txt
+Updated to revision 26523.
+jiali@bluenose:~/csci2132/tmp/a2q3$ catf[K file2.txt 
+A little elf
+climbed into a bush,
+to build a shed
+that no one could see.
+jiali@bluenose:~/csci2132/tmp/a2q3$ svn commit -"merge file2"
+Authentication realm: <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+Password for 'jiali': 
+
+-----------------------------------------------------------------------
+ATTENTION!  Your password for authentication realm:
+
+   <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+
+can only be stored to disk unencrypted!  You are advised to configure
+your system so that Subversion can store passwords encrypted, if
+possible.  See the documentation for details.
+
+You can avoid future appearances of this warning by setting the value
+of the 'store-plaintext-passwords' option to either 'yes' or 'no' in
+'/users/cs/jiali/.subversion/servers'.
+-----------------------------------------------------------------------
+Store password unencrypted (yes/no)? no
+Sending        file2.txt
+Transmitting file data .
+Committed revision 26526.
+jiali@bluenose:~/csci2132/tmp/a2q3$ emacs file2.txt 
+[?1049h[?12;25h[?1h=[H[2J[24d[K[?1l>[?12l[?25h[?1049l[39;49m[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-UUU:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading /usr/share/emacs/site-lisp/site-start.d/cmake3-init.el (source)...[K[H
+[?12l[?25h[?12;25h[24;75H[?25ldone[H
+[?12l[?25h[?12;25h[24d[?25lrce)...[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-UUU:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+Loading /usr/share/emacs/site-lisp/site-start.d/desktop-entry-mode-init.el (sou\
+[A[2d[?12l[?25h[?12;25h[24;8H[?25ldone[H
+[?12l[?25h[?12;25h[24d[K[23;49H[?25lsystemtap-init.el (source)...[K[H
+[?12l[?25h[?12;25h[24d[?25lne[23;78Hdo\
+[2d[?12l[?25h[?12;25h[>0c[24d[?25lne[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-UUU:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /usr/share/emacs/site-lisp/site-start.d/systemtap-init.el (source)...do\
+[A[2d[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lLoading vc-svn...[K[H
+[?12l[?25h[?12;25h[24;18H[?25ldone[H
+[?12l[?25h[?12;25h[24d[?25lLoading vc-svn...done[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+A little elf[K
+climbed into a bush,[K
+to build a shed[K
+that no one could see.[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-UU-:----F1  [0m[39;49m[27m[7m[1mfile2.txt   [0m[39;49m[27m[7m   All L1    SVN-26526  (Text) ------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[K[2;13H[K[23;6H[?25l[7m**[0m[39;49m[27m[2;12H[?12l[?25h[?12;25h[K[K[C[?25lo[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25lg[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[24;1H[?25lSaving file /users/cs/jiali/csci2132/tmp/a2q3/file2.txt...[2;14H[?12l[?25h[?12;25h[24;1H[?25lWrote /users/cs/jiali/csci2132/tmp/a2q3/file2.txt[K[2;14H[?12l[?25h[?12;25h[23;6H[?25l[7m----F1  [0m[39;49m[27m[7m[1mfile2.txt   [0m[39;49m[27m[7m   All L1    SVN:[0m[39;49m[27m[2;14H[?12l[?25h[?12;25h[24;1H[K[2;14H[24;1H[?25l(No files need saving)[2;14H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49mjiali@bluenose:~/csci2132/tmp/a2q3$ svn update
+Updating '.':
+Authentication realm: <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+Password for 'jiali': 
+
+-----------------------------------------------------------------------
+ATTENTION!  Your password for authentication realm:
+
+   <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+
+can only be stored to disk unencrypted!  You are advised to configure
+your system so that Subversion can store passwords encrypted, if
+possible.  See the documentation for details.
+
+You can avoid future appearances of this warning by setting the value
+of the 'store-plaintext-passwords' option to either 'yes' or 'no' in
+'/users/cs/jiali/.subversion/servers'.
+-----------------------------------------------------------------------
+Store password unencrypted (yes/no)? no
+Conflict discovered in '/users/cs/jiali/csci2132/tmp/a2q3/file2.txt'.
+Select: (p) postpone, (df) diff-full, (e) edit,
+        (mc) mine-conflict, (tc) theirs-conflict,
+        (s) show all options: p
+C    file2.txt
+Updated to revision 26527.
+Summary of conflicts:
+  Text conflicts: 1
+jiali@bluenose:~/csci2132/tmp/a2q3$ svn diff file2.txt
+Index: file2.txt
+===================================================================
+--- file2.txt	(revision 26527)
++++ file2.txt	(working copy)
+@@ -1,4 +1,8 @@
++<<<<<<< .mine
++A little orge
++=======
+ A big dwarf
++>>>>>>> .r26527
+ climbed into a bush,
+ to build a shed
+ that no one could see.
+jiali@bluenose:~/csci2132/tmp/a2q3$ emacs file2.txt
+[?1049h[?12;25h[?1h=[H[2J[24d[K[?1l>[?12l[?25h[?1049l[39;49m[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-UUU:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading /usr/share/emacs/site-lisp/site-start.d/cmake3-init.el (source)...[K[H
+[?12l[?25h[?12;25h[24;75H[?25ldone[H
+[?12l[?25h[?12;25h[24d[?25lrce)...[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-UUU:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+Loading /usr/share/emacs/site-lisp/site-start.d/desktop-entry-mode-init.el (sou\
+[A[2d[?12l[?25h[?12;25h[24;8H[?25ldone[H
+[?12l[?25h[?12;25h[24d[K[23;49H[?25lsystemtap-init.el (source)...[K[H
+[?12l[?25h[?12;25h[24d[?25lne[23;78Hdo\
+[2d[?12l[?25h[?12;25h[>0c[24d[?25lne[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-UUU:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /usr/share/emacs/site-lisp/site-start.d/systemtap-init.el (source)...do\
+[A[2d[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lLoading vc-svn...[K[H
+[?12l[?25h[?12;25h[24;18H[?25ldone[H
+[?12l[?25h[?12;25h[24d[?25lThere are unresolved conflicts in this file[H
+[?12l[?25h[?12;25h[24d[?25lThere are unresolved conflicts in this file[K[H[7mFile Edit Options Buffers Tools SMerge Help                                     [0m[39;49m[27m
+[A
+[47m<<<<<<< .mine                                                                   [39;49m
+[A
+[31mA little orge                                                                   [39;49m
+[A
+[47m=======[39;49m                                                                         
+[A
+[32mA big dwarf                                                                     [39;49m
+[A
+[47m>>>>>>> .r26527                                                                 [39;49m
+[A
+climbed into a bush,[K
+to build a shed[K
+that no one could see.[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-UU-:----F1  [0m[39;49m[27m[7m[1mfile2.txt   [0m[39;49m[27m[7m   All L1    SVN!26527  (Text SMerge) -----------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[K[23;34H[?25l[7m2[0m[39;49m[27m[H
+
+[?12l[?25h[?12;25h[23;34H[?25l[7m1[0m[39;49m[27m[H
+[?12l[?25h[?12;25h[?25l<<<<<< .mine[K
+A little orge[K
+=======[K
+A big dwarf[K
+>>>>>>> .r26527[K[23;6H[7m**[0m[39;49m[27m[H
+[?12l[?25h[?12;25h[2;6H[?25l .mine[K[?12l[?25h[?12;25h[2;5H[?25l .mine[K[?12l[?25h[?12;25h[2;4H[?25l .mine[K[?12l[?25h[?12;25h[2;3H[?25l .mine[K[?12l[?25h[?12;25h[C[?25l .mine[K[?12l[?25h[?12;25h[?25l .mine[K[?12l[?25h[?12;25h[1P[?25lmine[K[?12l[?25h[?12;25h[?25line[K[?12l[?25h[?12;25h[?25lne[K[?12l[?25h[?12;25h[?25le[K[?12l[?25h[?12;25h[K[1;9r[2;1H[1M[1;24r[9;1H[K[2d[?25l[1P[?12l[?25h[?12;25h[1P[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[C[?25lle orge[K[?12l[?25h[?12;25h[?25lle orge[K[?12l[?25h[?12;25h[?25le orge[K[?12l[?25h[?12;25h[?25l orge[K[?12l[?25h[?12;25h[1P[?25lrge[K[?12l[?25h[?12;25h[?25lge[K[?12l[?25h[?12;25h[?25le[K[?12l[?25h[?12;25h[K[1;8r[2;1H[1M[1;24r[8;1H[K[2d	[K[2;6H[K[2;5H[K[2;4H[K[2;3H[K[C[K[K[1;7r[2;1H[1M[1;24r[7;1H[K[2d[2;12H[K[K[K[K[K[C[?25lo[?12l[?25h[?12;25h[?25lg[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25l>>>>>>> .r26527
+climbed into a bush,
+to build a shed[K
+[Chat no one could see.
+[K[2;11H[?12l[?25h[?12;25h	[?25l .r26527[K[2;11H[?12l[?25h[?12;25h	[?25l .r26527[K[2;11H[?12l[?25h[?12;25h	[?25l .r26527[K[2;11H[?12l[?25h[?12;25h[2;14H[?25l .r26527[K[2;11H[?12l[?25h[?12;25h[2;13H[?25l .r26527[K[2;11H[?12l[?25h[?12;25h[C[?25l .r26527[K[2;11H[?12l[?25h[?12;25h[?25l .r26527[K[2;11H[?12l[?25h[?12;25h[?25l.r26527[K[2;11H[?12l[?25h[?12;25h[?25lr26527[K[?12l[?25h[?12;25h[?25l26527[K[?12l[?25h[?12;25h[?25l6527[K[?12l[?25h[?12;25h[?25l527[K[?12l[?25h[?12;25h[?25l27[K[?12l[?25h[?12;25h[?25l7[K[?12l[?25h[?12;25h[K[24;1H[?25lC-x[2;11H[?12l[?25h[?12;25h[24;4H[?25l-[2;11H[?12l[?25h[?12;25h[24;4H[?25l C-s[2;11H[?12l[?25h[?12;25h[24;1H[?25lSaving file /users/cs/jiali/csci2132/tmp/a2q3/file2.txt...[2;11H[?12l[?25h[?12;25h[24;1H[?25lWrote /users/cs/jiali/csci2132/tmp/a2q3/file2.txt[K[2;11H[?12l[?25h[?12;25h[23;6H[?25l[7m--[0m[39;49m[27m[2;11H[?12l[?25h[?12;25h[24;1H[K[2;11H[24;1H[?25l(No files need saving)[2;11H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49mjiali@bluenose:~/csci2132/tmp/a2q3$ cat file2.txt 
+A big ogre
+climbed into a bush,
+to build a shed
+that no one could see.
+jiali@bluenose:~/csci2132/tmp/a2q3$ svn resolved file2.txt 
+jiali@bluenose:~/csci2132/tmp/a2q3$ svn commit -m "conflicts c[Kresolved"
+Authentication realm: <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+Password for 'jiali': 
+
+-----------------------------------------------------------------------
+ATTENTION!  Your password for authentication realm:
+
+   <https://svn.cs.dal.ca:443> csci2132 Subversion Repository: Authenticate with LDAP
+
+can only be stored to disk unencrypted!  You are advised to configure
+your system so that Subversion can store passwords encrypted, if
+possible.  See the documentation for details.
+
+You can avoid future appearances of this warning by setting the value
+of the 'store-plaintext-passwords' option to either 'yes' or 'no' in
+'/users/cs/jiali/.subversion/servers'.
+-----------------------------------------------------------------------
+Store password unencrypted (yes/no)? no
+Sending        file2.txt
+Transmitting file data .
+Committed revision 26528.
+jiali@bluenose:~/csci2132/tmp/a2q3$ cat file2.txt 
+A big ogre
+climbed into a bush,
+to build a shed
+that no one could see.
+jiali@bluenose:~/csci2132/tmp/a2q3$ exit
+
+Script done on Mon 11 Feb 2019 12:13:10 AM AST

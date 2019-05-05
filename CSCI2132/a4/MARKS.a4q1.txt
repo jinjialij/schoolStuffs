@@ -1,0 +1,14 @@
+STUDENTS: jiali
+QUESTION: a4
+MARKER: kazi (Serikzhan Kazi <sr520720@dal.ca>)
+MARKS (10): 1
+--- COMMENTS ---
+fails for  "yes" dataset
+These tests were used for your program:
+
+The "yes" dataset contains five large (up to 63 bits-long) prime numbers
+This tests whether your program:
+1) can handle large integers, as specified in the assignment statement
+2) correctly works on primality
+
+The "no" dataset contains five large (up to 63 bits-long) non-prime numbers

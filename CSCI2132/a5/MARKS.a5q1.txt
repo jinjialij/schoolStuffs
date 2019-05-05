@@ -1,0 +1,25 @@
+STUDENTS: jiali
+QUESTION: a5
+MARKER: yizhao (James He <yz855856@dal.ca>)
+MARKS (10):7
+--- COMMENTS ---
+==11989== 
+==11989== 
+==11989== HEAP SUMMARY:
+==11989==     in use at exit: 0 bytes in 0 blocks
+==11989==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==11989== 
+==11989== All heap blocks were freed -- no leaks are possible
+==11989== 
+==11989== For counts of detected and suppressed errors, rerun with: -v
+==11989== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+luhn.c (10)
+	 1/1  Reads from stdin
+	 1/1  Writes to stdout
+	 1/1  Correct reading of input
+	 2/4  Correct classification as valid/invalid
+        226416589 failed
+	 1/2  Handles "arbitrarily long" numbers(up to 80 chars)
+        2264165890226424226416589022642422641658902264242264165890226424 failed
+	 1/1  Does not leak memory
+total1:7

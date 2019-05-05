@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+typedef struct _list_t *list_t;
+struct _list_t {
+  int *data;
+  size_t capacity, size;
+};
+
+list_t make_list() {
+  list_t list = malloc(sizeof(struct _list_t));
+  list->data = malloc(8 * sizeof(int));
+  list->capacity = 8; 
+  list->size = 0;
+return vec;
+}
+void destroy_list(vec_t vec) {
+free(vec"->data); free(vec);
+}

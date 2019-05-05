@@ -1,0 +1,8 @@
+Ada,Byron
+Alan,Byron
+Ken,Byron
+Ken,Thompson
+Alan,Turing
+Alan,Turing
+Alan,Turing
+This file is the resault of sort -t, -k 2 -k 1 names.csv. It means that use comma to spearate the name into two fields and then sort by the part after comma and then sort by the part before comma.

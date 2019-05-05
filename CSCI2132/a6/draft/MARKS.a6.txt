@@ -1,0 +1,6 @@
+STUDENTS: jiali
+ASSIGNMENT: a6
+MARKER: kthakkar (Karan Kirit Thakkar <kr527589@dal.ca>)
+MARKS (30):26
+--- COMMENTS ---
+Sequence of the lines are different in your output. Though comment in your code explains your code better.

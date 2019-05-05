@@ -1,0 +1,29 @@
+STUDENTS: jiali
+QUESTION: a3
+MARKER: yizhao (James He <yz855856@dal.ca>)
+MARKS (10):6.0
+--- COMMENTS ---
+
+compress_large_files.sh (5)
+	 1/2 compress the correct files
+		 compresse directory larger than 0
+		 compressed file not exist: Failed, a3
+	 0/1 no output on success
+	 0/1 correct handling of arguments
+	 1.0/1 correct error messages
+		 0.25/0.25 If the wrong number of command line arguments is given, a usage message USAGE: compress_large_files.sh size [dir ...] should be printed
+		 0.25/0.25 If the first argument is not a number, a message ERROR: xxx is not a number should be printed.
+		 0.25/0.25 If any argument other than the first one is not a valid directory, a message ERROR: xxx is not a directory should be printed.
+		 0.25/0.25 If a directory to be searched for files or a file in such a directory cannot be read, a message ERROR: Cannot read file xxx should be printed.
+Total1:2.0
+
+view.sh (5)
+	 1/2 Displays compressed files
+	 1/1 No temporary files left after exit
+	 1/1 Displays uncompressed files
+	 1/1 Error message when impossible read
+Total2:4
+
+Total=Total1+Total2=6.0
+
+If you have any question, please email me at james.he@dal.ca

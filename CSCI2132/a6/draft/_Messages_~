@@ -1,0 +1,9 @@
+("emacs" "unique.c")
+Loading /usr/share/emacs/site-lisp/site-start.d/cmake3-init.el (source)...done
+Loading /usr/share/emacs/site-lisp/site-start.d/desktop-entry-mode-init.el (source)...done
+Loading /usr/share/emacs/site-lisp/site-start.d/systemtap-init.el (source)...done
+For information about GNU Emacs and the GNU system, type C-h C-a.
+Loading cc-langs...done
+Loading vc-svn...done
+call-interactively: End of buffer [7 times]
+Auto-saving...done

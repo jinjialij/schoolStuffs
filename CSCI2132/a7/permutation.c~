@@ -1,0 +1,79 @@
+#include <stdio.h>
+
+//print all elements in the array except elements equal to 0
+int printArr(int arr[],int input,int i){
+  int temp=arr[i];
+  if(i==input){
+    return 0;
+  }
+  else{
+    if(arr[i]!=0)
+      printf("%d",arr[i]);
+    i++;
+    printArr(arr,input,i);
+  }
+}
+
+int permuInside(int arr[], int input,int count,int j){
+  int temp=arr[i],num;
+  if(count>input-1){
+    return 0;
+  }
+  else if(arr[count]==0){
+    count++;
+    permuInside(arr,input,count,0);
+  }
+  else{
+    printf("%d ",arr[i]);
+    arr[count]=0;
+    permuInside(arr,input,0);
+    //printArr(arr,input,0);
+    arr[i]=temp;
+    i++;
+    permuInside(arr,input,i);
+  }
+}
+
+int permuTop(int input,int arr[],int count){
+  if(input-count==0){//exceed the size of array
+    return 0;//end function
+  }
+  else{
+    printf("%d \n",arr[count]);
+    
+    //for each element
+    int temp=arr[count],num;
+    arr[count]=0;//let arr[i]=0
+    //call function
+    puts("permutation of this element:");
+    permuInside(arr,input,count,0);
+    //permuTop(input,arr,count+1);
+    arr[count]=temp;//restore arr[i]
+    //
+    count++;
+    puts("its elements: ");
+    permuTop(input,arr,count);
+  }
+}
+
+int main(int argc, char **argv) {
+  //read input number through cmd line
+  int num=0,input=0,initial=1;;
+  sscanf(argv[1],"%d",&input);
+  printf("%d\n",input);
+  
+  //create an array contains 1 till n
+  puts("Elements in the array are: ");
+  int numbers[input-1];
+  //int *p=numbers;
+  for(num=0;num<input;num++){
+    numbers[num]=initial++;
+    printf("%d  ",numbers[num]);
+  }
+  puts(" ");
+  puts("element: ");
+  permuTop(input,numbers,0);
+  puts(" ");
+  
+  return 0;
+}

@@ -1,0 +1,12 @@
+(a) 
+Consider a file file1.txt and a second file file2.txt created using the command
+Only one.
+(b) 
+The output is "Hello there".
+(c)
+Only one.
+(d) The output is "No such file or directory"
+In question 1b, it creates a hardlink. The hardlink preserves the contents of the file. When the original file is deleted, you can still access content of the file by using hard link. 
+However, the ln -s makes a symbolic link which only points to the original files. It does not contain contents. When the original file is removed, the link would become useless.
+(e) No. Hard links cannot be created for directories.  
+

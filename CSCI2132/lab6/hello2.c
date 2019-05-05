@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void do_stuff(){
+  printf("Just doing stuff.\n");
+  exit(2);
+  printf("Done doing stuff.\n");
+}
+
+int main(){
+  printf("Hello, world!\n");
+  do_stuff();
+  printf("Hello again!\n");
+  return 0;
+}
