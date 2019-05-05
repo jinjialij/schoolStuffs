@@ -1,2 +1,1 @@
-# Studing-C
-Learning unix and C (CSCI2132)
+# Studing C and unix (CSCI2132)
