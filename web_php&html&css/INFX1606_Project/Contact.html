@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./myStyle.css">
+	<script src="./myScripts.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./jqEmail.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<header class="col-12 header">
+		<a href="./index.html">
+			<img class="col-3" id="head_logo" src="./images/logo.jpg" alt="logo"><!--logo class="head_logo"-->
+		</a>
+		<form class="col-6 top_search_form"><!--class=""top_search""-->
+			<input id="top_search" type="text" name="search">
+			<button id="top_search_button">Search</button>
+		</form>
+	</header>
+	<nav class="col-12 nav">
+		<ul>
+			<li><a href="./index.html">Homepage</a></li>
+			<li><a href="./film.html">Film</a></li>
+			<li><a href="./about.html">About us</a></li>
+			<li><a href="./Contact.html">Contact us</a></li>
+		</ul>
+	</nav>
+	<div>
+		<section id="contact">
+			<h1>Contact us</h1>
+			<p>If you have any question, sending us messages and we will help you as soon as possible!</p>
+			<form id="contact_form"  onsubmit="alertMe()">
+				<div>
+					<label style="padding-left:20px; padding-right: 35px;">Name</label>
+					<input id="fullname" type="text" name="fullname" required>
+				</div>
+				<div>
+					<label style="padding-left:20px;padding-right: 40px;">Email</label>
+					<input id="email" type="email" name="email" required>
+				</div>
+				<div>
+					<label style="padding-left:20px;padding-right: 12px;margin-bottom: 130px;">Message</label>
+					<textarea id="msg" name="message" rows="5" cols="30">
+					</textarea>
+				</div>
+				<button id="buttonsub" type="submit" >Submit</button>
+				<button id="breset" type="reset">Reset</button>	
+			</form>
+		</section>
+		<section id="contactDetail">
+			<h3>Other Contact ways</h3>
+			<p>Phone: <br/> 1-800-XXX-YYYY</p>
+			<p>Email:<span>contactfilmplex@filmplex.com</span></p>
+		</section>
+	</div>
+	<footer class="col-12"><!--footer-->
+		<a href="./index.html">
+			<img class="col-3 logo" src="./images/logo.jpg" alt="logo"><!--logo-->
+		</a>
+		<div class="col-5 footer_right">
+			<nav class="footer_nav">
+				<ul>
+					<li><a href="./index.html">Homepage</a></li>
+					<li><a href="./film.html">Film</a></li>
+					<li><a href="./about.html">About us</a></li>
+					<li><a href="./Contact.html">Contact us</a></li>
+				</ul>
+			</nav>
+			<p>&copy;2017</p>	
+		</div>				
+	</footer>
+</body>
+</html>

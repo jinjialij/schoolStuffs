@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Homepage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="stylesheet" type="text/css" href="./myStyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="./myScripts.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  	<script src="./ResponsiceSlides/responsiveslides.min.js"></script>
+  	<script>
+	    $(function() {
+	      $(".rslides").responsiveSlides();
+	    });
+  	</script>
+</head>
+<body>
+	<header class="col-12 header">
+		<a href="./index.html">
+			<img class="col-3" id="head_logo" src="./images/logo.jpg" alt="logo"><!--logo class="head_logo"-->
+		</a>
+		<form class="col-6 top_search_form"><!--class=""top_search""-->
+			<input id="top_search" type="text" name="search">
+			<button id="top_search_button">Search</button>
+		</form>
+	</header>
+	<nav class="col-12 nav">
+		<ul>
+			<li><a href="./index.html">Homepage</a></li>
+			<li><a href="./film.html">Film</a></li>
+			<li><a href="./about.html">About us</a></li>
+			<li><a href="./Contact.html">Contact us</a></li>
+		</ul>
+	</nav>
+	<div class="col-12 Tickets"><!-- class="Tickets"-->
+		<h2 id="Tickets_h2">Tickets</h2>
+		<form id="Tickets_form">
+			<input class="form_search" type="text" name="film_name">
+			<input class="form_search" type="text" name="theartre_name">
+			<button id="searchtickets">Search</button>
+		</form>
+	</div>	
+	<div class="col-9 left_container"><!--left container-->
+		<div>
+			<div class="playing">
+				<h1 class="index_heading" id="nowplaying">Now playing</h1>
+				<a href=""><span class="more">More</span></a>
+			</div>
+			<div class="films">
+				<a href="">
+					<img src="./images/COCKPIT.jpg" alt="COCKPIT">
+					<p class="caption">COCKPIT</p><!--film name-->	
+				</a>			
+			</div>
+			<div class="films">
+				<a href="">
+					<img src="./images/Detour.jpg" alt="Detour">
+					<p class="caption">Detour</p><!--film name-->	
+				</a>			
+			</div>
+			<div class="films">
+				<a href="">
+					<img src="./images/film1.jpg" alt="A_Journey_To_Greatness">
+					<p class="caption">A Journey To Greatness</p><!--film name-->	
+				</a>			
+			</div>
+			<div class="films">
+				<a href="./film.html">
+					<img src="./images/Emilio.jpg" alt="Emilio">
+					<p class="caption">Emilio</p><!--film name-->	
+				</a>			
+			</div>
+		</div>
+		<div>
+			<div class="playing" id="rentingmovies">
+				<h1 class="index_heading">Renting movies</h1>
+				<a href=""><span class="more">More</span></a>
+			</div>
+			<div class="films">
+				<a href="">
+					<img src="./images/Fences.jpg" alt="Fences">
+					<p class="caption">Fences</p><!--film name-->
+				</a>				
+			</div>
+			<div class="films">
+				<a href="">
+					<img src="./images/Natalka_Poltavka.jpg" alt="Natalka_Poltavka">
+					<p class="caption">Natalka Poltavka</p><!--film name-->	
+				</a>			
+			</div>
+			<div class="films">
+				<a href="">
+					<img src="./images/Rear_Window.jpg" alt="Rear_Window">
+					<p class="caption">Rear Window</p><!--film name-->		
+				</a>		
+			</div>
+			<div class="films">
+				<a href="">
+					<img src="./images/Blackmail.jpg" alt="Blackmail">
+					<p class="caption">Blackmail</p><!--film name-->		
+				</a>		
+			</div>
+		</div>
+		<div id="newspart">
+			<div class="playing">
+				<h1 class="index_heading">Latest News</h1>
+				<a href=""><span class="more">More</span></a>
+			</div>
+			<div class="news">
+				<a href="">				
+					<img class="newsimage" src="./images/Heroes_of_peace.jpg" alt="Heroes_of_peace">
+					<article>
+						<h3>Heroes of peace</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id porttitor lorem. Ut a sapien in ante malesuada bibendum.</p>
+					</article>
+				</a>
+			</div>
+			<div class="news">	
+				<a href="">			
+					<img class="newsimage" src="./images/Nailed.jpg" alt="Nailed">
+					<article>
+						<h3>Nailed</h3>
+						<p>Proin hendrerit lectus at suscipit consequat. Nulla ac lacus in urna bibendum euismod ac in dui. In pulvinar eros ut orci cursus, vel mattis lorem rutrum.</p>
+					</article>
+				</a>
+			</div>
+			<div class="news">
+				<a href="">			
+					<img class="newsimage" src="./images/payload.jpg" alt="Payload">
+					<article>
+						<h3>Payload</h3>
+						<p>Quisque ut velit id nunc faucibus eleifend non condimentum metus. Ut dictum efficitur velit non mollis.</p>
+					</article>
+				</a>	
+			</div>
+		</div>
+	</div>
+	<aside class="col-3 right_container"><!--picture slider-->
+		<div id="slides">
+			<p id="slidep">Hot movies!</p>
+			<ul class="rslides">
+	        	<li><a href=""><img src="./images/COCKPIT.jpg" alt="COCKPIT"> </a></li>
+	        	<li><a href="./film.html"><img src="./images/Emilio.jpg" alt="Emilio"></a></li>
+	        	<li><a href=""><img src="./images/Fences.jpg" alt="Fences"></a></li>
+	        	<li><a href=""><img src="./images/Rear_Window.jpg" alt="Rear_Window"></a></li>
+	      </ul>
+		</div>
+		<div id="sidelinks">
+			<p id="sidelink_p">Recommande links</p>
+			<ul>
+				<li><a href="#nowplaying">Now playing</a></li>
+				<li><a href="./film.html">film</a></li>
+				<li><a href="#rentingmovies">Reting movies</a></li>
+				<li><a href="#newspart">News</a></li>
+				<li><a href="./about.html">More information of us</a></li>
+				<li><a href="./Contact.html">Wanna contact with us?</a></li>
+			</ul>
+		</div>
+		<div id="Optional">
+			<h2>Welcome to Filmplex</h2>
+			<p>We are a young  leading entertainment company.<br/><br/>We sell online film tickets and offering digital renting service!
+			<br/><br/>Filmplex offers high quality services:<br/><br/><span>Lower price film tickets, <br/><br/>Dynamic activities<br/><br/>Events of films<br/><br/> Abundant renting movies</span></p>
+			<a href="./about.html"><span id="moreOptional">More</span></a>
+		</div>
+	</aside>
+	<footer class="col-12"><!--footer-->
+		<a href="./index.html">
+			<img class="col-3 logo" src="./images/logo.jpg" alt="logo"><!--logo-->
+		</a>
+		<div class="col-5 footer_right">
+			<nav class="footer_nav">
+				<ul>
+					<li><a href="./index.html">Homepage</a></li>
+					<li><a href="./film.html">Film</a></li>
+					<li><a href="./about.html">About us</a></li>
+					<li><a href="./Contact.html">Contact us</a></li>
+				</ul>
+			</nav>
+			<p>&copy;2017</p>	
+		</div>				
+	</footer>
+</body>
+</html>

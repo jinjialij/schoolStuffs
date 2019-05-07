@@ -1,0 +1,73 @@
+Changes of A5:
+1) delete a div in index.php which was used to print all chats of following users. Since in this assignment, we are asked to use ajax, I delete this part and use ajax to perform the function. It modified to a div whose id is p. And in JavaScript, div elements are continuously created to add div until all chats are loaded.
+
+List of things to do for Assignment 4: 
+Changed a function in myFunction2 in includes file. The expression of datestime now is : $dateTime = date("Y-m-d H:i:s", time()); which orginally is $dateTime = date("Y-m-d, H:i:s", time()); This mistake resulted mistakes of inserting date time incorrectly and lead to the order problem.
+
+A5 Implement description:
+For password:
+I changed the password pattern that was used in A4. I changed it by using regex. If the inputted password in the sign-up page does not match the requirement, I let the webpage show errors according to different conditions. The first kind of condition is missing one of the required characters, and another kind of condition only has one specific character. For these two kinds of condition, specific errors are displayed explicitly. As for the rest condition, the password rule is the mistaken notice as I assumed that they have no idea about the rule because their mistakes do not follow any pattern. If the users' password matches the pattern, their password would be hashed and stored in the database. Once they finish sign up, they can log in. Their inputted password would be hashed at first. Then, the hashed password would be compared with the stored hashed password in the database. If they match, the user can successfully log in. Otherwise, they failed.
+
+For the "live" post pages
+There is a landing page called getPosts.php. It receives the accountID from js scripts in the index.php.It uses the id to find the following users' userid, name, date, and post. In the getPosts.php, those values are stored in an array. It encodes the array in the end so that the ajax in the index page can use it. In the index page, HTML codes are stored as strings in the js variable. The array is parsed once they are received in the index page. I used getElementById("p").innerHTML to add all codes into a variable as string. Then there is a fresh function. It call loadChat function and use setTimeOut to reload the page every 20 second. I use "location.reload(true);" to reload the page. In the end, I use window.load to call fresh function. In this way, the page can be update every 20 seconds.
+
+Changes of a4:
+
+1)Use Bootstrap modal to add follow buttons. Added in the chat page. 
+2)rewrite myFunction.php and saved as myFunction2.php;add new functions and renew orginal functions
+3)add log out button(in all pages ), check box(in profile page)
+3)Add userId=$userId in all pages' links so that can take data according to user id 
+4)Update all the SQL queries to prepared statements and bind the variables to these prepared statements.
+
+List of things to do for Assignment 3: None
+
+
+A4 Implement description:
+
+sign up: I check if username and password are empty and show error messages accordingly. I also check if the password matches the pattern. If all meets qualifications, passing them to the database, setting session variable new user to true, and direct to the login page. 
+login: I first check username if it is empty. If it is not empty, I check if the password is empty. Error messages would show for empty username or password. If the password is not empty either, valid variables and compare them with data in the database. If match, change session variable loggedin to true for old users and direct them back to index.php;set session variables( id, name, username);If not match, showing error messages. 
+creating user file:After login,directing the new user to profile page. The new users can update their information and profile in this page. Then the findPeople page ( new user can follow other users here)and to index.php at last.(set logged in session variable to true and ste newuser to false
+session: every page has session start in the top. session variables are set once login. 
+
+log out: when clicking the log out button, set logged in the session variables to false. Directing user to chatter page
+adding to follow: First adding follow button, if the user who is going to follow is not the logging user or users he is following, insert into the database and set new folloing rows.
+
+Update database:
+Add a new table: login table. It has four attributes: loginID(int4,not null, auto increasing,pk), UserID(int 4, not null,fk), username (varchar(255),not null), and password (varchar(255),notnull ). This table store user's information that is used to log in.
+
+A description of the database:
+The Chat use MySql to read, store, insert, search data. There are three tables: user, follow, and post. The user table stores The user table stores UserID (primary key), Name, and Profile. The following table stores FollowingID, User's ID, and FollowingUser's ID. This table shows one's followers and users he/she is following. It use FollowingID as primary key and other two attributes are foreign key  which references to user table's primary key. The Posts stores PostID(primary key), UserID(foreign key which references to the user table's UserID), Date(date of post texts), and Post(Post texts). 
+
+A description of how you implement the search:
+There is a search function which take in keyword and search. The function selects all posts which are related to the account user(name of the user, his/her followers, and users who he/she is following or posts posted by the user, his/her followers, and users who he/she is following). It first join posts and user table by userId to get all users' name their posts. Then using it to left join the table which contains following users(select all users whose user is 1) and left join the table which contains follower users(select all users whose followingUser is 1). Afterwards, select posts which FollowingUser in not null, or User(Follower) is not null or the userid is 1 and has content like the search keyword in name, data, or posts. At last use str_ireplace() function to replace searched keywords with bolded font without case senstive and return the content.
+
+This site is a content management system which shows users' own chats, his or her followers' chats and those whom he or she is following. It allows users to create, search chats. Users can also review what they posted.
+ 
+I used Bootstrap. (Getbootstrap.com, 2018) to design the site. I used its responsive layout to enable this site to adapt to screen. I also used responsive images, badge, card, forms, list group, navs, nav, nav bar and, etc. With those features, I designed this site a responsive one. 
+
+
+This site is composed of four PHP files. They are Homepage, MyChats, Follow, Search pages.
+Every page has a navigation bar which has two links that direct to the home page and MyChats page. There are a search bar and a chat button in the navigation bar. 
+
+
+The first one is the Homepage. It displays the home page for the site. Including the navigation bar, it has a head which is consist of the icon, name, and a slogan. In the body, it has a left pad and contains the account owner¡¯s head picture and username. There are three links under them. They are Chats, Following, and Followers. Chats is linked to what the account owners¡¯ personal page. It will display what he or she has posted and a self-description.  On the right panel, there is a chat pad where the user can create new chats. The following content is New Chats where shows all chats posted by those whom the user is following. The chat can be a line of text, a text with a picture or a picture only. In the head of the posted chat, it shows the username, user head image, date, and time.
+
+
+The second one is search page which shares the same template with the Homepage except the heading of the main content is what users have inputted in the search bar. 
+
+
+The third one is MyChats. It¡¯s a place hold information of each users' account and what he or she has posted. Beneath the navigation bar, the head is the account owner's head picture and username. In the user profile, it also shows the owner or users' short descriptions while it has those three links for chats, following, and followers. It is the template for followers and following users. People who have accounts will share the same template except for personal contents like the user's head picture, username, description, followers, and followings will be different. Contents in chats panel are also different. The page title and the picture, as well as name, will change according to if the link is from a Following or Follower. 
+
+
+The final one is the Follow template. It is the template to show followers or following users. It shares most of the contents of the Home page except that in the main panel, the content is followers or following users¡¯ name list.
+
+
+
+
+Reference£º
+
+Getbootstrap.com. (2018). Bootstrap. [online] Available at: http://getbootstrap.com/ [Accessed 30 Sep. 2018].
+
+
+
+website, real estate, buildings, houses, Home, web page. (2018). Shareicon.net. Retrieved 30 September 2018, from https://www.shareicon.net/website-real-estate-buildings-houses-home-web-page-706836
